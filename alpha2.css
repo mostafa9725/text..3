@@ -1,0 +1,349 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    height: 100vh;
+}
+
+header {
+    background-image: url(/mostafa/images\ \(4\).jpeg);
+}
+
+.containr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containr .logo-1 {
+    max-width: 60px;
+    height: 60px;
+    margin-left: 25px;
+    transition: .7s; 
+
+}
+
+.containr nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containr nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    white-space: nowrap;
+    margin-right: 40px;
+}
+
+.containr nav ul li {
+    color: black; 
+    font-size: 16.5px;
+    transition: .7s; 
+}
+
+.containr nav a {
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile {
+    width: 0%;
+    font-size: 30px;
+    background-color: black;
+    white-space: nowrap;
+    margin-right: 50px;
+    
+}
+
+.Menu-items:hover{
+    transform: translateY(-5px);
+    font-weight: bolder;
+    color: rgba(133, 7, 2, 0.89);
+}
+.logo-1:hover {
+    transform: translateY(-6px);
+
+}
+
+
+@media (max-width: 890px) {
+    .header{
+        width: 100%;
+    }
+    .containr{
+        width: 100%;
+    }
+    .containr nav{
+        width: 100%;
+    }
+    .containr nav ul{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 891px) {
+    .containr{
+        width: 100%;
+    }  
+    nav .menu-mobile{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .containr{
+        width: 100%;
+    }
+    nav .menu-mobile{
+        display: none;
+    }
+}
+
+/*----finish header----*/
+
+section {
+    width: 100%;
+    height: 92.1vh;
+    background-color: #3c3c3c;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    position: relative;
+}
+
+.containr-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.containr-1 .circle {
+    width: 450px;
+    height: 400px;
+    background-image: url(/mostafa/background/photo-1708549565671-730b21690df1.jpeg);
+    border-radius: 600px 600px 0px 0px;
+    box-shadow: 10px 10px 0px 0px white inset;
+    
+}
+
+.containr-1 .img {
+    position: absolute;
+    bottom: 0;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containr-1 .img-1 { 
+    width: 600px;
+    height: 600px;
+    background-size: contain;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right {
+    0%{
+        transform: translateX(100px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%; 
+    }
+}
+
+.containr-2 {
+    width: 345px;
+    height: 610px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.containr-2 .img-2 {
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.containr-2 .text {
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    margin-right: 50px;
+    animation-name: left;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}  
+
+@keyframes left {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0%;
+    }
+    1000%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.text-1 {
+    width: 500px;
+    height: 170px;
+    position: absolute;
+    bottom: 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    margin-left: 110px;
+    letter-spacing: 1px;
+}
+
+.career {
+    width: 390px;
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career .img-3 {
+    width: 300px;
+    height: 150px;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    section {
+        width: 100%;
+        height: 100%;
+    }
+    .containr-1{
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        top: 0;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .containr-1 .circle{
+        width: 300px;
+        height: 300px;
+    }
+    .containr-1 .img {
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .containr-1 .img-1{
+        width: 350px;
+        height: 400px;
+    }
+    .containr-2{
+        width: 100%;
+        height: 270px;
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containr-2 .img-2{
+        margin-left: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .containr-2 .text{
+        margin-right: 50px;
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .text-1{
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .text-1 p{
+        margin-left: 8px;
+        white-space: nowrap;
+        letter-spacing: 1px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .containr-2 {
+        width: 345px;
+        height: 630px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    .containr-2 .img-2 {
+        margin-left: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    section {
+        width: 100%;
+        height: 92.1vh;
+    }
+    .text-1{
+        width: 240px;
+    }
+    .text-1 p { 
+        margin-top: 20px;
+        
+
+    }
+}
+
+@media (min-width: 993) and (max-width: 1152px) {
+    section{
+        width: 100%;
+        height: 92.1vh;
+    }
+    
+}
+
+@media (min-width: 1153px) {
+    
+    
+}
+
